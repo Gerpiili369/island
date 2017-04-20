@@ -2,5 +2,87 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <variable constant="0" name="targetDoor" sid="115275559057464" static="0" type="number">0</variable>
+        <event-block sid="215696151133764">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="142953574927201" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="961219501812936">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="540901661603196" type="Door">
+                    <param id="0" name="Instance variable">Open</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="738676678236084" type="Door">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="600879026554291" type="Door">
+                    <param id="0" name="Animation">&quot;open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="478086292269538">
+            <conditions>
+                <condition id="-22" name="Else" sid="350857734992045" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Solid" id="0" name="Set enabled" sid="793544660889533" type="Door">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="541128735437102" type="Door">
+                    <param id="0" name="Animation">&quot;closed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="654463574055924">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="905938816682207" type="Sprite">
+                    <param id="0" name="Object">Door</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="578079817306117" type="Door">
+                    <param id="0" name="Instance variable">Open</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="734274916794037" type="System">
+                    <param id="0" name="Variable">targetDoor</param>
+                    <param id="1" name="Value">Door.targetDoor</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="493249654863833" type="System">
+                    <param id="0" name="Layout">&quot;room&quot;&amp;Door.targetRoom</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632619538758048">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="832231284278792" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="187470329329197">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="169047228532416" type="Door">
+                            <param id="0" name="Instance variable">doorID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">targetDoor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="488868721390538" type="Sprite">
+                            <param id="0" name="Object">Door</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>

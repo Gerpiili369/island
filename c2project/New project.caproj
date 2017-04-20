@@ -23,7 +23,11 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -79,23 +83,59 @@
         <object-type name="LocalStorage" sid="687972567004540">
             <plugin id="LocalStorage" />
         </object-type>
-        <object-type name="Sprite" sid="431194041999141">
+        <object-type name="Door" sid="431194041999141">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Open" sid="585747101574286" type="boolean" />
+                <instance-variable name="doorID" sid="116541530232213" type="number" />
+                <instance-variable name="targetDoor" sid="419208297406150" type="number" />
+                <instance-variable name="targetRoom" sid="231879276964258" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="846911968067714">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="221918436981689" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="221918436981689" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                </animation>
+                <animation framecount="1" loop="0" name="closed" pingpong="0" repeatcount="1" repeatto="0" sid="204737312793122" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Tilemap" sid="310637100281052">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="660578496375417">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture />
             <tiles />
+        </object-type>
+        <object-type name="Sprite" sid="227220436189851">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="790177025983259">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="454886660256147">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638404025303615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>room1.xml</layout>
+        <layout>room2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
