@@ -27,6 +27,8 @@ class Tasotehdas{
         for(let paikka of this.aktiivinenTaso.loppupaikat){
             if (pelaaja.rivi === paikka.rivi && pelaaja.sarake===paikka.sarake){
                 this.aktiivinenIndeksi=paikka.seuraavataso-1;
+                pelaaja.rivi=paikka.alkurivi;
+                pelaaja.sarake=paikka.alkusarake;
                 return true;
             }
             

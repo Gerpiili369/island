@@ -95,8 +95,8 @@ peli.js
        tasotehdas.seuraavaTaso();
        if(tasotehdas.onTasojaJaljella()){
            teePelialue(tasotehdas.getTaso());
-           olio.rivi=tasotehdas.getTaso().alkurivi;
-           olio.sarake=tasotehdas.getTaso().alkusarake;
+           //olio.rivi=tasotehdas.getTaso().alkurivi;
+           //olio.sarake=tasotehdas.getTaso().alkusarake;
            esineet=tasotehdas.getEsineet();
            lisaaEsineet(esineet);
            lisaaUusiSuunta(olio);

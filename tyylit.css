@@ -22,16 +22,16 @@ td{
     /*background-color: red;*/
 }
 .pelaajaylos{
-    background-image: url(kuvat/autoylos.png);
+    background-color: aqua;
 }
 .pelaajaalas{
-    background-image: url(kuvat/autoalas.png);
+    background-color: aqua;
 }
 .pelaajavasen{
-    background-image: url(kuvat/autovasen.png);
+    background-color: aqua;
 }
 .pelaajaoikea{
-    background-image: url(kuvat/autooikea.png);
+    background-color: aqua;
 }
 .raha {
     background-image: url(kuvat/emeraldred1.png);
