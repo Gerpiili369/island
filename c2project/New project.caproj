@@ -98,10 +98,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="221918436981689" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
                 <animation framecount="1" loop="0" name="closed" pingpong="0" repeatcount="1" repeatto="0" sid="204737312793122" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
