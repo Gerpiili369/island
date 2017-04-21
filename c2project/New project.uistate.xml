@@ -12,12 +12,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">room1</layout>
         <layout order="2">room2</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout order="3">room3</layout>
+        <layout order="4">room4</layout>
+        <layout order="5">room5</layout>
+        <layout active="1" order="6">room6</layout>
+        <layout order="7">room7</layout>
+        <event-sheet order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
@@ -31,5 +36,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Door/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>
