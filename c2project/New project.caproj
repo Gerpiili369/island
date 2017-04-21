@@ -138,6 +138,7 @@
         <layout>room2.xml</layout>
         <layout>room3.xml</layout>
         <layout>room4.xml</layout>
+        <layout>room5.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
