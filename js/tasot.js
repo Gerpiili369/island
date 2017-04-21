@@ -116,12 +116,10 @@ function lataaTasot() {
                     ],
            "alkurivi":4,
            "alkusarake":0,
-           "loppurivi":4,
-           "loppusarake":18,
              "loppupaikat":[
                {"rivi":0,"sarake":2,"seuraavataso":2,"alkurivi":10,"alkusarake":2},
                {"rivi":5,"sarake":13,"seuraavataso":4},
-               {"rivi":5,"sarake":0,"seuraavataso":5}
+               {"rivi":5,"sarake":0,"seuraavataso":5,"alkurivi":0,"alkusarake":9}
            ],
            "karttakuvat":["tie","seinä","kukka"],
            "pelaajanKulkuSallittuMax":0,
@@ -131,6 +129,66 @@ function lataaTasot() {
             "vastustajat":[
               // {"nimi":"vastustaja","alkurivi":1,"alkusarake":3,"suunta":"vasen"},
               // {"nimi":"vastustaja","alkurivi":1,"alkusarake":7,"suunta":"oikea"}
+           ]
+        },
+        {
+            "nimi":"huone 4",
+            "riviLkm":11,
+            "sarakeLkm":14,
+            "kartta":[
+                        [1,1,0,1,1,1,1,1,1,1,1,1,1,1], //rivi 0
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1], //rivi 1
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                    ],
+           "alkurivi":4,
+           "alkusarake":0,
+           "loppurivi":4,
+           "loppusarake":18,
+             "loppupaikat":[
+               {"rivi":0,"sarake":2,"seuraavataso":2,"alkurivi":10,"alkusarake":2},
+           ],
+           "karttakuvat":["tie","seinä","kukka"],
+           "pelaajanKulkuSallittuMax":0,
+           "esineet":[
+           ],
+            "vastustajat":[
+           ]
+        },
+        {
+            "nimi":"huone 5",
+            "riviLkm":11,
+            "sarakeLkm":14,
+            "kartta":[
+                        [1,1,1,1,1,1,1,1,1,0,1,1,1,1], //rivi 0
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1], //rivi 1
+                        [1,0,0,1,0,0,0,0,0,0,0,1,0,1],
+                        [1,0,0,1,1,1,0,0,0,1,1,1,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,1,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,1,0,1],
+                        [1,0,1,1,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,1,0,0,0,0,0,0,0,0,0,1],
+                        [1,0,0,1,1,1,0,0,1,1,1,1,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                    ],
+           "alkurivi":0,
+           "alkusarake":9,
+             "loppupaikat":[
+               {"rivi":0,"sarake":9,"seuraavataso":4,"alkurivi":10,"alkusarake":2},
+           ],
+           "karttakuvat":["tie","seinä","kukka"],
+           "pelaajanKulkuSallittuMax":0,
+           "esineet":[
+           ],
+            "vastustajat":[
            ]
         }
     ];
