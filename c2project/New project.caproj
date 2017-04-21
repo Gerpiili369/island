@@ -138,6 +138,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="880858982571735">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="targetDoor" sid="306214034900843" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978788119780374" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
