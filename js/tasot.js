@@ -118,8 +118,8 @@ function lataaTasot() {
            "alkusarake":0,
              "loppupaikat":[
                {"rivi":0,"sarake":2,"seuraavataso":2,"alkurivi":10,"alkusarake":2},
-               {"rivi":5,"sarake":13,"seuraavataso":4},
-               {"rivi":5,"sarake":0,"seuraavataso":5,"alkurivi":0,"alkusarake":9}
+               {"rivi":5,"sarake":13,"seuraavataso":4,"alkurivi":5,"alkusarake":0},
+               {"rivi":5,"sarake":0,"seuraavataso":5,"alkurivi":4,"alkusarake":13}
            ],
            "karttakuvat":["tie","seinä","kukka"],
            "pelaajanKulkuSallittuMax":0,
@@ -134,26 +134,24 @@ function lataaTasot() {
         {
             "nimi":"huone 4",
             "riviLkm":11,
-            "sarakeLkm":14,
+            "sarakeLkm":16,
             "kartta":[
-                        [1,1,0,1,1,1,1,1,1,1,1,1,1,1], //rivi 0
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1], //rivi 1
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,0,0,1],
-                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1], //rivi 0
+                        [1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1], //rivi 1
+                        [1,0,0,0,0,0,0,1,0,1,1,1,1,0,1,1],
+                        [1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1],
+                        [1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1],
+                        [0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1],
+                        [1,1,1,1,1,0,0,1,0,0,0,1,1,0,0,1],
+                        [1,0,0,0,0,0,0,1,1,1,0,0,1,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1],
+                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
                     ],
-           "alkurivi":4,
+           "alkurivi":5,
            "alkusarake":0,
-           "loppurivi":4,
-           "loppusarake":18,
              "loppupaikat":[
-               {"rivi":0,"sarake":2,"seuraavataso":2,"alkurivi":10,"alkusarake":2},
+               {"rivi":5,"sarake":0,"seuraavataso":3,"alkurivi":5,"alkusarake":13},
            ],
            "karttakuvat":["tie","seinä","kukka"],
            "pelaajanKulkuSallittuMax":0,
@@ -167,12 +165,42 @@ function lataaTasot() {
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
+                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1], //rivi 0
+                        [1,0,0,0,0,1,0,0,0,0,1,0,0,1], //rivi 1
+                        [1,0,1,1,0,1,0,1,0,0,1,0,0,1],
+                        [1,0,1,0,0,1,0,0,0,0,1,1,0,1],
+                        [1,0,1,1,1,1,0,0,1,0,0,0,0,0],
+                        [1,0,0,0,0,1,0,0,1,0,0,0,0,1],
+                        [1,0,0,0,0,1,0,0,1,1,1,1,0,1],
+                        [1,1,1,1,0,0,0,0,1,0,0,1,0,1],
+                        [1,0,0,1,0,1,1,0,1,0,1,1,0,1],
+                        [1,0,0,0,0,0,0,0,1,0,0,0,0,1],
+                        [1,1,1,1,1,1,1,1,1,0,1,1,1,1]
+                    ],
+           "alkurivi":4,
+           "alkusarake":13,
+             "loppupaikat":[
+               {"rivi":4,"sarake":13,"seuraavataso":3,"alkurivi":5,"alkusarake":0},
+               {"rivi":10,"sarake":9,"seuraavataso":6,"alkurivi":0,"alkusarake":9},
+           ],
+           "karttakuvat":["tie","seinä","kukka"],
+           "pelaajanKulkuSallittuMax":0,
+           "esineet":[
+           ],
+            "vastustajat":[
+           ]
+        },
+        {
+            "nimi":"huone 6",
+            "riviLkm":11,
+            "sarakeLkm":14,
+            "kartta":[
                         [1,1,1,1,1,1,1,1,1,0,1,1,1,1], //rivi 0
                         [1,0,0,0,0,0,0,0,0,0,0,0,0,1], //rivi 1
-                        [1,0,0,1,0,0,0,0,0,0,0,1,0,1],
-                        [1,0,0,1,1,1,0,0,0,1,1,1,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,1,0,1],
-                        [1,0,0,0,0,0,0,0,0,0,0,1,0,1],
+                        [1,0,0,1,0,0,0,0,0,0,1,0,0,1],
+                        [1,0,0,1,1,1,0,0,1,1,1,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,1,0,0,1],
+                        [1,0,0,0,0,0,0,0,0,0,1,0,0,1],
                         [1,0,1,1,0,0,0,0,0,0,0,0,0,1],
                         [1,0,0,1,0,0,0,0,0,0,0,0,0,1],
                         [1,0,0,1,1,1,0,0,1,1,1,1,0,1],
@@ -182,7 +210,7 @@ function lataaTasot() {
            "alkurivi":0,
            "alkusarake":9,
              "loppupaikat":[
-               {"rivi":0,"sarake":9,"seuraavataso":4,"alkurivi":10,"alkusarake":2},
+               {"rivi":0,"sarake":9,"seuraavataso":5,"alkurivi":10,"alkusarake":9},
            ],
            "karttakuvat":["tie","seinä","kukka"],
            "pelaajanKulkuSallittuMax":0,
@@ -193,4 +221,4 @@ function lataaTasot() {
         }
     ];
 }
-
+        
