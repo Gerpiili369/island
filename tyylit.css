@@ -22,16 +22,28 @@ td{
     /*background-color: red;*/
 }
 .pelaajaylos{
-    background-color: aqua;
+    background-image: url(kuvat/peliTyyppiYlos.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
 }
 .pelaajaalas{
-    background-color: aqua;
+    background-image: url(kuvat/peliTyyppiAlas.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
 }
 .pelaajavasen{
-    background-color: aqua;
+    background-image: url(kuvat/peliTyyppiVasen.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
 }
 .pelaajaoikea{
-    background-color: aqua;
+    background-image: url(kuvat/peliTyyppiOikea.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
 }
 .raha {
     background-image: url(kuvat/emeraldred1.png);
