@@ -189,6 +189,8 @@ function lataaTasot() {
            "esineet":[
            ],
             "vastustajat":[
+                {"nimi":"vastustaja","alkurivi":1,"alkusarake":7,"suunta":"vasen"},
+                {"nimi":"vastustaja","alkurivi":9,"alkusarake":5,"suunta":"oikea"}
            ]
         },
         {
