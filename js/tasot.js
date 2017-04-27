@@ -156,6 +156,7 @@ function lataaTasot() {
            "karttakuvat":["tie","seinä","kukka"],
            "pelaajanKulkuSallittuMax":0,
            "esineet":[
+               {"nimi":"avaimet","rivi":9,"sarake":14,"pisteet":10}
            ],
             "vastustajat":[
            ]
