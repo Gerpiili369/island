@@ -34,7 +34,7 @@ peli.js
            suoritaToiminto(nappaimisto.getToiminto(e.keyCode));
        });
        
-       ajastin=setInterval(paivitaVastustajat, 500);
+       ajastin=setInterval(paivitaVastustajat, 200);
    }
    
    function suoritaToiminto(toiminto) { 
@@ -68,7 +68,8 @@ peli.js
                   poistaVanhaSuunta(olio);
                   olio.suunta=SUUNTA.OIKEA;
                   olio.siirry();
-                }            
+                }
+            
        } //switch loppu
        paivitaSumu(tasotehdas.getTaso(), olio)
        tarkastaEsineTormaykset(olio);

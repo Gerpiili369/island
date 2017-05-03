@@ -23,6 +23,7 @@ function lataaTasot() {
                     ],
            "alkurivi":5,
            "alkusarake":6,
+           "sumu":{"nimi":"sumu", "leveys":1,"pituus":2},
             "loppupaikat":[
                {"rivi":3,"sarake":13,"seuraavataso":1,"alkurivi":3,"alkusarake":0},
            ],
@@ -117,11 +118,9 @@ function lataaTasot() {
            "karttakuvat":["tie","seinä"],
            "pelaajanKulkuSallittuMax":0,
            "esineet":[
-              // {"nimi":"raha","rivi":1,"sarake":7,"pisteet":10}
            ],
             "vastustajat":[
-              // {"nimi":"vastustaja","alkurivi":1,"alkusarake":3,"suunta":"vasen"},
-              // {"nimi":"vastustaja","alkurivi":1,"alkusarake":7,"suunta":"oikea"}
+               {"nimi":"vastustaja","alkurivi":5,"alkusarake":6,"suunta":"alas"}
            ]
         },
         {
@@ -150,6 +149,9 @@ function lataaTasot() {
                {"nimi":"avaimet","rivi":9,"sarake":14,"pisteet":10}
            ],
             "vastustajat":[
+                {"nimi":"vastustaja","alkurivi":8,"alkusarake":2,"suunta":"oikea"},
+                {"nimi":"vastustaja","alkurivi":4,"alkusarake":13,"suunta":"ylös"},
+                {"nimi":"vastustaja","alkurivi":5,"alkusarake":9,"suunta":"ylös"}
            ]
         },
         {
@@ -176,6 +178,7 @@ function lataaTasot() {
            "karttakuvat":["tie","seinä"],
            "pelaajanKulkuSallittuMax":0,
            "esineet":[
+               {"nimi":"avaimet","rivi":3,"sarake":3,"pisteet":10}
            ],
             "vastustajat":[
                 {"nimi":"vastustaja","alkurivi":1,"alkusarake":7,"suunta":"vasen"},
