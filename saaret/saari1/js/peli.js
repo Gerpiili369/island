@@ -70,6 +70,7 @@ peli.js
                   olio.siirry();
                 }            
        } //switch loppu
+       paivitaSumu(tasotehdas.getTaso(), olio)
        tarkastaEsineTormaykset(olio);
        lisaaUusiSuunta(olio);
        
@@ -100,6 +101,7 @@ peli.js
            esineet=tasotehdas.getEsineet();
            lisaaEsineet(esineet);
            lisaaUusiSuunta(olio);
+           paivitaSumu(tasotehdas.getTaso(),olio);
            vastustajat=tasotehdas.getVastustajat();
            lisaaVastustajatAlkupaikkaan(vastustajat);
        }

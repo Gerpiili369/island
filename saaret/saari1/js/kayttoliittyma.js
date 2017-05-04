@@ -15,7 +15,10 @@ function teePelialue(taso) {
         for(let sarake=0;sarake<taso.sarakeLkm;sarake++){
             let td=document.createElement('td');
             elementtiTaulukko[rivi][sarake]=td;
-            td.classList.add(taso.karttakuvat[taso.kartta[rivi][sarake]]);              
+            td.classList.add(taso.karttakuvat[taso.kartta[rivi][sarake]]);
+            if (taso.sumu!==undefined) {
+                td.classList.add(taso.sumu.nimi);
+            }
             tr.appendChild(td);
         }
         osaDokumentti.appendChild(tr);
@@ -51,4 +54,38 @@ function lisaaEsineet(esineet) {
 
 function paivitaRepunSisalto(pelaaja) {
     console.log("pelaajan pisteet:"+pelaaja.pisteet);
+}
+
+function poistaSumu(taso,alkurivi, loppurivi, alkusarake,loppusarake) {
+    let alkur=Math.max(0,alkurivi);
+    let alkus=Math.max(0,alkusarake);
+    let loppur=Math.max(0,Math.min(taso.riviLkm-1,loppurivi));
+    let loppus=Math.max(0,Math.min(taso.sarakeLkm-1,loppusarake));
+    
+    for(let rivi=Math.min(alkur,loppur); rivi<=Math.max(alkur,loppur); rivi++) {
+        for(let sarake=Math.min(alkus,loppus); sarake<=Math.max(alkus,loppus); sarake++) {
+            elementtiTaulukko[rivi][sarake].classList.remove(taso.sumu.nimi);
+        }
+    }
+}
+
+
+function paivitaSumu(taso, pelaaja) {
+    
+    if (taso.sumu===undefined) {
+        return;
+    }
+    let leveys=taso.sumu.leveys;
+    let pituus=taso.sumu.pituus;
+    
+    let kerroin=1;
+    switch(pelaaja.suunta) {
+        case SUUNTA.YLOS: kerroin=-1;
+        case SUUNTA.ALAS: 
+            poistaSumu(taso, pelaaja.rivi, pelaaja.rivi+kerroin*pituus, pelaaja.sarake-leveys, pelaaja.sarake+leveys);            
+            break;
+        case SUUNTA.VASEN: kerroin=-1;
+        case SUUNTA.OIKEA:
+            poistaSumu(taso, pelaaja.rivi-leveys, pelaaja.rivi+leveys, pelaaja.sarake, pelaaja.sarake+kerroin*pituus);
+    }
 }

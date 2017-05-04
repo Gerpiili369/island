@@ -80,6 +80,23 @@ td{
     animation: ruudut 0.5s steps(2) infinite;
 }
 
+.avain.sumu, .avain2.sumu{
+    background-color: darkcyan;
+    background-image: url(kuvat/sumu.png);
+}
+
+.raha{
+    background-image: url(kuvat/kolikko.png);
+}
+.raha.sumu{
+    background-color: aqua;
+    background-image: url(kuvat/sumu.png);
+}
+.sumu{
+    background-image:url(kuvat/sumu.png);
+}
+
+
 @keyframes ruudut{
     from{background-position:0px;}
     to {background-position:-80px;}
