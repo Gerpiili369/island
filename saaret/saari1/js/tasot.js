@@ -56,7 +56,6 @@ function lataaTasot() {
            ],
            "karttakuvat":["tie","seinä"],
            "pelaajanKulkuSallittuMax":0,
-           "tormays":"tormays",
            "sumu":{"nimi":"sumu", "leveys":1,"pituus":2},
            "esineet":[
            ],
