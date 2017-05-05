@@ -23,9 +23,8 @@ function lataaTasot() {
                     ],
            "alkurivi":5,
            "alkusarake":6,
-           "sumu":{"nimi":"sumu", "leveys":1,"pituus":2},
-            "loppupaikat":[
-               {"rivi":3,"sarake":13,"seuraavataso":1,"alkurivi":3,"alkusarake":0},
+           "loppupaikat":[
+               {"rivi":3,"sarake":13,"seuraavataso":1,"alkurivi":3,"alkusarake":0}
            ],
            "karttakuvat":["tie","seinä"],
            "pelaajanKulkuSallittuMax":0,
