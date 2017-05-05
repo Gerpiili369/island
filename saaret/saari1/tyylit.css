@@ -54,6 +54,7 @@ td{
 .tormays{
     background-color: red;
 }
+
 .vastustajaylos{
     background-image: url(kuvat/ukkoYlos.png);
     width:40px;
@@ -80,6 +81,11 @@ td{
     animation: ruudut 0.5s steps(2) infinite;
 }
 
+sumu.vastustajaylos, sumu.vastustajaalas, sumu.vastustajavasen, sumu.vastustajaoikea{
+    background-image: url(kuvat/sumu.png);
+    background-color: black;
+}
+
 .avain.sumu, .avain2.sumu{
     background-color: darkcyan;
     background-image: url(kuvat/sumu.png);
@@ -94,7 +100,7 @@ td{
 }
 .sumu{
     background-color: black;
-    /* background-image:url(kuvat/sumu.png); */
+    background-image:url(kuvat/sumu.png);
 }
 
 
