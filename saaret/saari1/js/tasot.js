@@ -60,6 +60,8 @@ function lataaTasot() {
            "esineet":[
            ],
            "vastustajat":[
+               {"nimi":"vastustaja","alkurivi":3,"alkusarake":12,"suunta":"ylös"},
+               {"nimi":"vastustaja","alkurivi":8,"alkusarake":2,"suunta":"ylös"}
            ]
         },
         {
