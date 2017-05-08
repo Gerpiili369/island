@@ -56,7 +56,7 @@ function lataaTasot() {
            ],
            "karttakuvat":["tie","seinä"],
            "pelaajanKulkuSallittuMax":0,
-           "sumu":{"nimi":"sumu", "leveys":1,"pituus":1},
+           "sumu":{"nimi":"sumu", "leveys":2,"pituus":2},
            "esineet":[
            ],
            "vastustajat":[
