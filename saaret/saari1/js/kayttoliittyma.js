@@ -34,6 +34,10 @@ function lisaaLuokka(rivi,sarake,luokka){
     elementtiTaulukko[rivi][sarake].classList.add(luokka);
 }
 
+function korvaaLuokat(rivi, sarake, arvo) {
+    //console.log("*solu sijainnissa "+rivi+", "+sarake+" on muutettu tilaan: "+arvo);
+}
+
 function poistaVanhaSuunta(hahmo){
     poistaLuokka(hahmo.rivi, hahmo.sarake, hahmo.getLuokka());
 }
@@ -49,6 +53,12 @@ function lisaaVastustajatAlkupaikkaan(vastustajat){
 function lisaaEsineet(esineet) {
     for(let esine of esineet) {
         lisaaLuokka(esine.rivi,esine.sarake, esine.nimi);
+    }
+}
+
+function lisaaAvaimet(avaimet) {
+    for(let avain of avaimet) {
+        lisaaLuokka(avain.rivi,avain.sarake, avain.nimi);
     }
 }
 

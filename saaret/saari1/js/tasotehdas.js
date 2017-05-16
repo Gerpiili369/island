@@ -53,6 +53,10 @@ class Tasotehdas{
         return this.aktiivinenTaso.esineet;
     }
     
+    getAvaimet(){
+        return this.aktiivinenTaso.avaimet;
+    }
+    
     getVastustajat() {
         let vastustajataulu=[];
         for(let vastustaja of this.aktiivinenTaso.vastustajat){
