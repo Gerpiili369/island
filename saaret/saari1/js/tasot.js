@@ -5,7 +5,7 @@ function lataaTasot() {
     return [
         
         {
-            "nimi":"huone 0",
+            "nimi":"huone 1",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
@@ -34,7 +34,7 @@ function lataaTasot() {
            ]
         },
         {
-            "nimi":"huone 1",
+            "nimi":"huone 2",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
@@ -65,7 +65,7 @@ function lataaTasot() {
            ]
         },
         {
-          "nimi":"huone 2",
+            "nimi":"huone 3",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
@@ -95,7 +95,7 @@ function lataaTasot() {
            ]   
         },
         {
-            "nimi":"huone 3",
+            "nimi":"huone 4",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
@@ -125,7 +125,7 @@ function lataaTasot() {
            ]
         },
         {
-            "nimi":"huone 4",
+            "nimi":"huone 6",
             "riviLkm":11,
             "sarakeLkm":16,
             "kartta":[
@@ -156,7 +156,7 @@ function lataaTasot() {
            ]
         },
         {
-            "nimi":"huone 5",
+            "nimi":"huone 6",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
@@ -187,7 +187,7 @@ function lataaTasot() {
            ]
         },
         {
-            "nimi":"huone 6",
+            "nimi":"huone 7",
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
