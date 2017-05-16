@@ -9,11 +9,17 @@ class Pelaaja{
         this.suunta=suunta;
         this.pisteet=0;
         this.reppu=[];
+        this.nippu=[];
     }
     
     lisaaReppuun(esine) {
         this.pisteet+=esine.pisteet;
         this.reppu.push(esine);
+    }
+    
+    lisaaNippuun(avain) {
+        this.pisteet+=avain.pisteet;
+        this.nippu.push(avain);
     }
     
     getLuokka() {
