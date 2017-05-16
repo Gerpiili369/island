@@ -8,6 +8,7 @@ peli.js
    let olio;
    let vastustajat;
    let esineet;
+   let avaimet;
    let ajastin;
   
    document.addEventListener('DOMContentLoaded',muodostaPeli);
@@ -18,9 +19,11 @@ peli.js
        olio=tasotehdas.getPelaaja();
        vastustajat=tasotehdas.getVastustajat();
        esineet=tasotehdas.getEsineet();
+       avaimet=tasotehdas.getAvaimet();
       
        teePelialue(tasotehdas.getTaso());
        lisaaEsineet(esineet);
+       lisaaAvaimet(avaimet);
        lisaaVastustajatAlkupaikkaan(vastustajat);
        lisaaUusiSuunta(olio);
         
@@ -34,7 +37,7 @@ peli.js
            suoritaToiminto(nappaimisto.getToiminto(e.keyCode));
        });
        
-       ajastin=setInterval(paivitaVastustajat, 500);
+       ajastin=setInterval(paivitaVastustajat, 200);
    }
    
    function suoritaToiminto(toiminto) { 
@@ -68,9 +71,12 @@ peli.js
                   poistaVanhaSuunta(olio);
                   olio.suunta=SUUNTA.OIKEA;
                   olio.siirry();
-                }            
+                }
+            
        } //switch loppu
+       paivitaSumu(tasotehdas.getTaso(), olio)
        tarkastaEsineTormaykset(olio);
+       tarkastaAvainTormaykset(olio);
        lisaaUusiSuunta(olio);
        
        if(tasotehdas.onTasoLoppu(olio)) {
@@ -78,30 +84,58 @@ peli.js
        }
    }//suoritaToiminto loppu
    
-   function tarkastaEsineTormaykset(pelaaja) {
-       for(let i=0; i<esineet.length;i++) {
-           if(esineet[i].rivi===pelaaja.rivi && 
-              esineet[i].sarake===pelaaja.sarake) {
-              pelaaja.lisaaReppuun(esineet[i]);
+   function tarkastaEsineTormaykset(olio) {
+       for(let i=0; i<esineet.length; i++) {
+           if(esineet[i].rivi===olio.rivi && 
+              esineet[i].sarake===olio.sarake) {
+              olio.lisaaReppuun(esineet[i]);
               poistaLuokka(esineet[i].rivi, esineet[i].sarake, esineet[i].nimi);
-              paivitaRepunSisalto(pelaaja);
+              paivitaRepunSisalto(olio);
               esineet.splice(i,1);
               return;
            }
        }      
    }
    
-   function vaihdaTaso() {
-       tasotehdas.seuraavaTaso();
-       if(tasotehdas.onTasojaJaljella()){
-           teePelialue(tasotehdas.getTaso());
-           //olio.rivi=tasotehdas.getTaso().alkurivi;
-           //olio.sarake=tasotehdas.getTaso().alkusarake;
-           esineet=tasotehdas.getEsineet();
-           lisaaEsineet(esineet);
-           lisaaUusiSuunta(olio);
-           vastustajat=tasotehdas.getVastustajat();
-           lisaaVastustajatAlkupaikkaan(vastustajat);
+    function tarkastaAvainTormaykset(olio) {
+        let taso=tasotehdas.getTaso();
+        for (let i=0; i<avaimet.length; i++) {
+            let avain=avaimet[i];
+            if (olio.rivi===avain.rivi && olio.sarake===avain.sarake) {
+                olio.lisaaNippuun(avain);
+                poistaLuokka(avain.rivi, avain.sarake, avain.nimi);
+                avaimet.splice(i, 1);
+                //paivitaPisteet(taso, olio);
+                    for(let avain of olio.nippu) {
+                    if(tasotehdas.getTaso().nimi===avain.taso) {
+                        tasotehdas.getTaso().kartta[avain.avaaRivi][avain.avaaSarake] = avain.arvo;
+                        korvaaLuokat(avain.avaaRivi, avain.avaaSarake, tasotehdas.getTaso().karttakuvat[avain.arvo]);
+                    }
+                }
+                return;
+            }
+        }
+    }
+    
+    function vaihdaTaso() {
+        tasotehdas.seuraavaTaso();
+        if(tasotehdas.onTasojaJaljella()){
+            for(let avain of olio.nippu) {
+                if(tasotehdas.getTaso().nimi===avain.taso) {
+                    tasotehdas.getTaso().kartta[avain.avaaRivi][avain.avaaSarake] = avain.arvo;
+                    korvaaLuokat(avain.avaaRivi, avain.avaaSarake, tasotehdas.getTaso().karttakuvat[avain.arvo]);
+                }
+            }    
+            teePelialue(tasotehdas.getTaso());
+            //olio.rivi=tasotehdas.getTaso().alkurivi;
+            //olio.sarake=tasotehdas.getTaso().alkusarake;
+            esineet=tasotehdas.getEsineet();
+            lisaaEsineet(esineet);
+            lisaaAvaimet(avaimet);
+            lisaaUusiSuunta(olio);
+            paivitaSumu(tasotehdas.getTaso(),olio);
+            vastustajat=tasotehdas.getVastustajat();
+            lisaaVastustajatAlkupaikkaan(vastustajat);
        }
        else {
            onLoppu=true;    
