@@ -3,5 +3,5 @@
  */
 
 function meeTakas() {
-    window.location.href="peli.html";
+    window.location.href="peli.php";
 }

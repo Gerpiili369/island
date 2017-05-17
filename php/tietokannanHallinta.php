@@ -1,4 +1,6 @@
 <?php
+/* tietokannanHallinta.php */
+
 class YhteydenHallinta {
 
     private $yhteys;

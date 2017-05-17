@@ -42,7 +42,7 @@ peli.js
    
    function suoritaToiminto(toiminto) { 
        if(onLoppu) {
-           window.location.href="loppu.html";
+           window.location.href="loppu.php";
        }
        switch(toiminto) {
             case TOIMINTO.YLOS:
