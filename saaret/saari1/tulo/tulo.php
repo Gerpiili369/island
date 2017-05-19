@@ -40,7 +40,7 @@ else {
             #animatearea	{ 
 	width: 560px; 
 	height: 400px; 
-	background-image: url(../kuvat/cssanimaatio.png);
+	background-image: url(../documentation/Pelianimaatio0000-0200.mov);
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 
