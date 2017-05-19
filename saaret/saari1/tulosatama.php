@@ -25,7 +25,7 @@ $rahamaara=$tietovarasto->haeRahamaara($nimimerkki);
         <title>Satama</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="tyylit/saarenkaikkityylit.css" media="screen" />
+        <link type="text/css" rel="stylesheet" href="../../tyylit/saarenkaikkityylit.css" media="screen" />
     </head>
     <body id="satama">
         <h1>Tervetuloa <?php echo $_SESSION['nimimerkki']; ?> saarelle <?php echo $_SESSION['saarenNimi']; ?>.</h1>

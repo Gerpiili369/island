@@ -8,7 +8,8 @@
     <body>
         <h1>Peli loppui</h1>
         <div>
-            <button onclick="meeTakas()">Mee takas</button>
+            <a href="peli.php">Mee takas</a>
+            <a href="tulosatama.php">Alkuun</a>
         </div>
     </body>
 </html>
