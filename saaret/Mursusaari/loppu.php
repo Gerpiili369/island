@@ -8,8 +8,9 @@
     <body>
         <h1>Hävisit</h1>
         <div>
-            <a href="peli.php">Mee takas</a>
-            <a href="tulosatama.php">Alkuun</a>
+            <p><b><a href="tulosatama.php" target="_blank">Alkuun</a></b></p>
+            <p><b><a href="peli.php" target="_blank">Mee takas</a></b></p>
+            
         </div>
     </body>
 </html>

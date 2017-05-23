@@ -106,7 +106,10 @@ sumu.vastustajaylos, sumu.vastustajaalas, sumu.vastustajavasen, sumu.vastustajao
     background-image:url(kuvat/sumu.png);
 }
 
-
+a:hover {
+    background-color: lightblue;
+}
+    
 @keyframes ruudut{
     from{background-position:0px;}
     to {background-position:-80px;}
