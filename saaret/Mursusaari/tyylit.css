@@ -17,6 +17,9 @@ td{
     background-color: gray;
     /*background-color: green;*/
 }
+.ovi{
+    background-image: url(kuvat/lukkolattia.png); 
+}
 .kukka{
     background-image: url(kuvat/punainenKukka.png);
     /*background-color: red;*/
