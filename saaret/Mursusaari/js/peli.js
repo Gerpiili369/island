@@ -4,6 +4,7 @@ peli.js
 
 (function(){
    let onLoppu;
+   let onVoitto;
    let tasotehdas;   
    let olio;
    let vastustajat;
@@ -15,6 +16,7 @@ peli.js
    
    function muodostaPeli(){
        onLoppu=false;
+       onVoitto=false;
        tasotehdas=new Tasotehdas();
        olio=tasotehdas.getPelaaja();
        vastustajat=tasotehdas.getVastustajat();
@@ -43,6 +45,9 @@ peli.js
    function suoritaToiminto(toiminto) { 
        if(onLoppu) {
            window.location.href="loppu.php";
+       }
+       else if(onVoitto) {
+           window.location.href="voitto.php";
        }
        switch(toiminto) {
             case TOIMINTO.YLOS:
@@ -99,6 +104,9 @@ peli.js
    
     function tarkastaAvainTormaykset(olio) {
         let taso=tasotehdas.getTaso();
+                if (avaimet===undefined) {
+            return;
+        }
         for (let i=0; i<avaimet.length; i++) {
             let avain=avaimet[i];
             if (olio.rivi===avain.rivi && olio.sarake===avain.sarake) {
@@ -130,6 +138,7 @@ peli.js
             //olio.rivi=tasotehdas.getTaso().alkurivi;
             //olio.sarake=tasotehdas.getTaso().alkusarake;
             esineet=tasotehdas.getEsineet();
+            avaimet=tasotehdas.getAvaimet();
             lisaaEsineet(esineet);
             lisaaAvaimet(avaimet);
             lisaaUusiSuunta(olio);
@@ -138,7 +147,7 @@ peli.js
             lisaaVastustajatAlkupaikkaan(vastustajat);
        }
        else {
-           onLoppu=true;    
+           onVoitto=true;    
        }
    }//vaihdaTaso loppu
    

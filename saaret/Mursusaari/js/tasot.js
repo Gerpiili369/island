@@ -29,8 +29,10 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                {"nimi":"raha","rivi":1,"sarake":1,"pisteet":10}
             ],
             "avaimet":[
+                {"nimi":"avain","rivi":0,"sarake":1,"pisteet":10, "avaaRivi":0, "avaaSarake":0, "arvo":0, "taso":"huone 1"}
             ],
             "vastustajat":[
             ]
@@ -75,7 +77,7 @@ function lataaTasot() {
             "riviLkm":11,
             "sarakeLkm":14,
             "kartta":[
-                        [1,1,1,1,1,1,1,1,1,1,1,1,1,1], //rivi 0
+                        [1,1,1,1,1,1,2,1,1,1,1,1,1,1], //rivi 0
                         [1,0,0,0,0,1,0,0,1,0,0,0,0,1], //rivi 1
                         [1,0,1,1,0,1,0,0,1,0,1,1,0,1],
                         [1,0,0,1,0,0,0,0,0,0,0,0,0,1],
@@ -93,10 +95,10 @@ function lataaTasot() {
                {"rivi":10,"sarake":2,"seuraavataso":3,"alkurivi":0,"alkusarake":2},
                {"rivi":5,"sarake":0,"seuraavataso":1,"alkurivi":5,"alkusarake":13}
             ],
-            "karttakuvat":["tie","seinä"],
+            "karttakuvat":["tie","seinä","ovi"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
-                
+                {"nimi":"raha","rivi":1,"sarake":1,"pisteet":10}
             ],
             "avaimet":[
             ],
@@ -113,7 +115,7 @@ function lataaTasot() {
                         [1,0,0,1,1,1,1,0,1,1,1,0,0,1],
                         [1,0,0,1,0,0,0,0,0,0,1,0,0,1],
                         [1,1,1,1,0,1,1,0,1,0,1,1,1,1],
-                        [0,0,0,0,0,1,0,0,1,0,0,0,0,0],
+                        [0,0,0,0,0,1,0,0,1,0,0,0,0,2],
                         [1,1,1,1,0,1,0,1,1,0,1,1,1,1],
                         [1,0,0,1,0,0,0,0,0,0,1,0,0,1],
                         [1,0,0,1,1,1,0,1,1,1,1,0,0,1],
