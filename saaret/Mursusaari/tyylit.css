@@ -92,7 +92,7 @@ sumu.vastustajaylos, sumu.vastustajaalas, sumu.vastustajavasen, sumu.vastustajao
 }
 
 .raha{
-    background-image: url(kuvat/kolikko.png);
+    background-image: url(kuvat/raha.png);
 }
 .raha.sumu{
     background-color: aqua;
