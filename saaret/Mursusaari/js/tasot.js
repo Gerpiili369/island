@@ -98,7 +98,7 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä","ovi"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
-                {"nimi":""raha"","rivi":1,"sarake":1,"pisteet":10}
+                {"nimi":"raha","rivi":1,"sarake":1,"pisteet":10}
             ],
             "avaimet":[
             ],
