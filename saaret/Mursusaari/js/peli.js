@@ -4,6 +4,7 @@ peli.js
 
 (function(){
    let onLoppu;
+   let onVoitto;
    let tasotehdas;   
    let olio;
    let vastustajat;
@@ -15,6 +16,7 @@ peli.js
    
    function muodostaPeli(){
        onLoppu=false;
+       onVoitto=false;
        tasotehdas=new Tasotehdas();
        olio=tasotehdas.getPelaaja();
        vastustajat=tasotehdas.getVastustajat();
@@ -43,6 +45,9 @@ peli.js
    function suoritaToiminto(toiminto) { 
        if(onLoppu) {
            window.location.href="loppu.php";
+       }
+       else if(onVoitto) {
+           window.location.href="voitto.php";
        }
        switch(toiminto) {
             case TOIMINTO.YLOS:
@@ -142,7 +147,7 @@ peli.js
             lisaaVastustajatAlkupaikkaan(vastustajat);
        }
        else {
-           onLoppu=true;    
+           onVoitto=true;    
        }
    }//vaihdaTaso loppu
    

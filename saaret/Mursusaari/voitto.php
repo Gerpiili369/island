@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Peli loppui</title>
@@ -6,9 +7,9 @@
         <script src="js/meeTakas.js"></script>
     </head>
     <body>
-        <h1>Hävisit</h1>
+        <h1>Voitit</h1>
         <div>
-            <a href="peli.php">Mee takas</a>
+            <a href="lahtosatama.php">Loppuun</a>
             <a href="tulosatama.php">Alkuun</a>
         </div>
     </body>
