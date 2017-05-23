@@ -9,8 +9,8 @@
     <body>
         <h1>Voitit</h1>
         <div>
-            <a href="lahtosatama.php">Loppuun</a>
-            <a href="tulosatama.php">Alkuun</a>
+            <p><b><a href="tulosatama.php" target="_blank">Alkuun</a></b></p>
+            <p><b><a href="lahtosatama.php" target="_blank">Loppuun</a></b></p>
         </div>
     </body>
 </html>
