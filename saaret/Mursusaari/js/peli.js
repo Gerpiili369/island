@@ -5,16 +5,19 @@ peli.js
 (function(){
    let onLoppu;
    let onVoitto;
+//   let ajastin;
    let tasotehdas;   
    let olio;
    let vastustajat;
    let esineet;
    let avaimet;
+   let nimimerkki;
    let ajastin;
   
    document.addEventListener('DOMContentLoaded',muodostaPeli);
    
    function muodostaPeli(){
+       nimimerkki = document.getElementById('nimimerkki').textContent;
        onLoppu=false;
        onVoitto=false;
        tasotehdas=new Tasotehdas();
@@ -28,6 +31,8 @@ peli.js
        lisaaAvaimet(avaimet);
        lisaaVastustajatAlkupaikkaan(vastustajat);
        lisaaUusiSuunta(olio);
+       
+       paivitaPisteet(tasotehdas.getTaso(), olio);
         
        let nappaimisto=new Nappainkonfiguraatio();
        nappaimisto.lisaaNappain(NAPPAIN.NUOLI_YLOS, TOIMINTO.YLOS);
@@ -43,12 +48,15 @@ peli.js
    }
    
    function suoritaToiminto(toiminto) { 
-       if(onLoppu) {
-           window.location.href="loppu.php";
-       }
-       else if(onVoitto) {
-           window.location.href="voitto.php";
-       }
+        if(onLoppu) {
+            window.location.href="loppu.php";
+        }
+        else if(onVoitto) {
+                 let viesti = "nimimerkki="+nimimerkki+"&rahasumma="+olio.pisteet;
+                 post('../../php/talletaRahat.php', viesti);
+     //            clearInterval(ajastin);
+                 window.location.href="voitto.php";
+         }
        switch(toiminto) {
             case TOIMINTO.YLOS:
                 if(tasotehdas.onSiirtoKelvollinen(olio.rivi-1,olio.sarake)) {
@@ -97,7 +105,9 @@ peli.js
               poistaLuokka(esineet[i].rivi, esineet[i].sarake, esineet[i].nimi);
               paivitaRepunSisalto(olio);
               esineet.splice(i,1);
-              return;
+              paivitaPisteet(tasotehdas.getTaso(), olio);
+              
+               return;
            }
        }      
    }

@@ -4,6 +4,11 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+
+<?php
+session_start();
+?>
+
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -20,8 +25,11 @@ and open the template in the editor.
         <script src="js/tasotehdas.js"></script>
         <script src="js/kayttoliittyma.js"></script>
         <script src="js/peli.js"></script>
+        <script src="../../js/ajax.js"></script>
     </head>
     <body>
+        <h1 id='nimimerkki'><?php echo $_SESSION["nimimerkki"]; ?></h1>
+        <h1 id="pisteet"></h1>
         <table>
             <thead></thead>
             <tbody id="pelialue">

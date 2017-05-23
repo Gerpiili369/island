@@ -69,6 +69,11 @@ function paivitaRepunSisalto(pelaaja) {
     console.log("pelaajan pisteet:"+pelaaja.pisteet);
 }
 
+function paivitaPisteet(taso, pelaaja){
+    document.getElementById('pisteet').textContent="Taso: "+taso.nimi+
+            ", Pisteet: "+pelaaja.pisteet;
+}
+
 function poistaSumu(taso,alkurivi, loppurivi, alkusarake,loppusarake) {
     let alkur=Math.max(0,alkurivi);
     let alkus=Math.max(0,alkusarake);
