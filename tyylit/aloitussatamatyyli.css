@@ -1,0 +1,25 @@
+
+/* aloitussatamatyyli.css */
+
+body {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#satama {
+    background-color: burlywood;
+}
+
+#hinnasto {
+    padding: 1em;
+    border: black solid 2px;
+}
+
+td {
+    padding: 1em;
+}
+
+.dialogi {
+    list-style: none;   
+}
+

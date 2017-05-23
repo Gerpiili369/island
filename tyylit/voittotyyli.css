@@ -1,0 +1,11 @@
+/* voittotyyli.css */
+p{
+    border: #ca3a11 solid thick;
+    background-color: yellow;
+    padding:10px
+}
+
+h1{
+    color:green;
+}
+

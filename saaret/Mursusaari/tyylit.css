@@ -1,0 +1,119 @@
+table{
+    border: black solid thick;
+    border-collapse: collapse;
+}
+table, td {
+    padding: 0;
+}
+td{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+}
+.tie {
+    background-color: peru;
+}
+.seinä{
+    background-color: gray;
+    /*background-color: green;*/
+}
+.ovi{
+    background-image: url(kuvat/lukkolattia.png); 
+}
+.kukka{
+    background-image: url(kuvat/punainenKukka.png);
+    /*background-color: red;*/
+}
+.pelaajaylos{
+    background-image: url(kuvat/peliTyyppiYlos.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.pelaajaalas{
+    background-image: url(kuvat/peliTyyppiAlas.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.pelaajavasen{
+    background-image: url(kuvat/peliTyyppiVasen.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.pelaajaoikea{
+    background-image: url(kuvat/peliTyyppiOikea.png);
+    width: 40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.raha {
+    background-image: url(kuvat/emeraldred1.png);
+}
+.avain {
+    background-image: url(kuvat/avaimet40.png)
+}
+.tormays{
+    background-color: red;
+}
+
+.vastustajaylos{
+    background-image: url(kuvat/ukkoYlos.png);
+    width:40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.vastustajaalas{
+    background-image: url(kuvat/ukkoAlas.png);
+    width:40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+
+.vastustajavasen{
+    background-image: url(kuvat/ukkoVasen.png);
+    width:40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+.vastustajaoikea{
+    background-image: url(kuvat/ukkoOikea.png);
+    width:40px;
+    height: 40px;
+    animation: ruudut 0.5s steps(2) infinite;
+}
+
+sumu.vastustajaylos, sumu.vastustajaalas, sumu.vastustajavasen, sumu.vastustajaoikea{
+    background-image: url(kuvat/sumu.png);
+    background-color: black;
+}
+
+.avain.sumu, .avain2.sumu{
+    background-color: darkcyan;
+    background-image: url(kuvat/sumu.png);
+}
+
+.raha{
+    background-image: url(kuvat/raha.png);
+}
+.raha.sumu{
+    background-color: aqua;
+    background-image: url(kuvat/sumu.png);
+}
+.sumu{
+    background-color: black;
+    background-image:url(kuvat/sumu.png);
+}
+
+a:hover {
+    background-color: lightblue;
+}
+    
+@keyframes ruudut{
+    from{background-position:0px;}
+    to {background-position:-80px;}
+}
+
+
+

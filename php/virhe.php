@@ -6,12 +6,12 @@
                                       initial-scale=1.0">
         <title>Virhe</title>  
         <link type="text/css" rel="stylesheet" 
-              href="../tyylit/lempityyli.css" media="screen"/>
+              href="../tyylit/virhetyyli.css" media="screen"/>
     </head>
     <body>
-        <section id="virhe">
+        <section>
         <h1>Ohjelmassa tapahtui virhe!</h1>
-        <p class="virhe">
+        <p>
             <?php echo htmlspecialchars($_GET["virhe"])?>
         </p>
         <a href="../index.html">Pääsivulle</a>
