@@ -60,6 +60,8 @@ function lataaTasot() {
             "pelaajanKulkuSallittuMax":0,
             "sumu":{"nimi":"sumu", "leveys":2,"pituus":2},
             "esineet":[
+                {"nimi":raha, "sarake":12, "rivi":3, "pisteet":10},
+                {"nimi":raha, "sarake":1, "rivi":9, "pisteet":10}
             ],
             "avaimet":[
             ],
@@ -94,6 +96,7 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                
             ],
             "avaimet":[
             ],
@@ -125,6 +128,8 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                {"nimi":raha, "sarake":1, "rivi":7, "pisteet":10},
+                {"nimi":raha, "sarake":12, "rivi":7, "pisteet":10}
             ],
             "vastustajat":[
                {"nimi":"vastustaja","alkurivi":5,"alkusarake":6,"suunta":"alas"}
@@ -152,7 +157,7 @@ function lataaTasot() {
             ],
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
-            "esineet":[                
+            "esineet":[
             ],
             "avaimet":[
                 {"nimi":"avain","rivi":9,"sarake":14,"pisteet":10, "avaaRivi":0, "avaaSarake":6, "arvo":0, "taso":"huone 3"}
@@ -187,6 +192,7 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                {"nimi":raha, "sarake":1, "rivi":8, "pisteet":10}
             ],
             "avaimet":[
                 {"nimi":"avain","rivi":3,"sarake":3,"pisteet":10, "avaaRivi":5, "avaaSarake":13, "arvo":0, "taso":"huone 4"}
@@ -219,6 +225,8 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                {"nimi":raha, "sarake":2, "rivi":8, "pisteet":10},
+                {"nimi":raha, "sarake":9, "rivi":4, "pisteet":10}
             ],
             "vastustajat":[
             ]
