@@ -57,6 +57,9 @@ function lisaaEsineet(esineet) {
 }
 
 function lisaaAvaimet(avaimet) {
+    if (avaimet===undefined) {
+        return;
+    }
     for(let avain of avaimet) {
         lisaaLuokka(avain.rivi,avain.sarake, avain.nimi);
     }

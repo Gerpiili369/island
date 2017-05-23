@@ -99,6 +99,9 @@ peli.js
    
     function tarkastaAvainTormaykset(olio) {
         let taso=tasotehdas.getTaso();
+                if (avaimet===undefined) {
+            return;
+        }
         for (let i=0; i<avaimet.length; i++) {
             let avain=avaimet[i];
             if (olio.rivi===avain.rivi && olio.sarake===avain.sarake) {
@@ -130,6 +133,7 @@ peli.js
             //olio.rivi=tasotehdas.getTaso().alkurivi;
             //olio.sarake=tasotehdas.getTaso().alkusarake;
             esineet=tasotehdas.getEsineet();
+            avaimet=tasotehdas.getAvaimet();
             lisaaEsineet(esineet);
             lisaaAvaimet(avaimet);
             lisaaUusiSuunta(olio);

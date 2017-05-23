@@ -29,8 +29,10 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+            {"nimi":"raha","rivi":1,"sarake":1,"pisteet":10}
             ],
             "avaimet":[
+                {"nimi":"avain","rivi":0,"sarake":1,"pisteet":10, "avaaRivi":0, "avaaSarake":0, "arvo":0, "taso":"huone 1"}
             ],
             "vastustajat":[
             ]
@@ -94,6 +96,7 @@ function lataaTasot() {
             "karttakuvat":["tie","seinä"],
             "pelaajanKulkuSallittuMax":0,
             "esineet":[
+                {"nimi":"raha","rivi":1,"sarake":1,"pisteet":10}
             ],
             "avaimet":[
             ],
@@ -110,7 +113,7 @@ function lataaTasot() {
                         [1,0,0,1,1,1,1,0,1,1,1,0,0,1],
                         [1,0,0,1,0,0,0,0,0,0,1,0,0,1],
                         [1,1,1,1,0,1,1,0,1,0,1,1,1,1],
-                        [0,0,0,0,0,1,0,0,1,0,0,0,0,0],
+                        [0,0,0,0,0,1,0,0,1,0,0,0,0,1],
                         [1,1,1,1,0,1,0,1,1,0,1,1,1,1],
                         [1,0,0,1,0,0,0,0,0,0,1,0,0,1],
                         [1,0,0,1,1,1,0,1,1,1,1,0,0,1],
